@@ -41,13 +41,9 @@ public class ConsertoController {
     }
 
     @GetMapping("/algunsdados")
-    public ResponseEntity<List<DadosListagemConserto>> listarAlgunsDados() {
-        var lista = repository.findAllByAtivoTrue()
-                .stream()
-                .map(DadosListagemConserto::new)
-                .toList();
-
-        return ResponseEntity.ok(lista);
+    public ResponseEntity listarAlgunsDados(Pageable paginacao) {
+        var pagina = repository.findAllByAtivoTrue(paginacao).map(DadosListagemConserto::new);
+        return ResponseEntity.ok(pagina);
     }
 
     @GetMapping("/{id}")

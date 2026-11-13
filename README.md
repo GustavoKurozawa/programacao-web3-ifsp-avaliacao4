@@ -7,7 +7,7 @@ Esta versão é uma evolução da Avaliação 3, implementando controle de acess
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 * **Java 21**
 * **Spring Boot** (Web MVC, Data JPA, Security, Validation)
 * **Flyway Migration** (controle de versão do banco de dados)
@@ -17,7 +17,7 @@ Esta versão é uma evolução da Avaliação 3, implementando controle de acess
 
 ---
 
-## 🚀 O que foi implementado nesta avaliação
+## O que foi implementado nesta avaliação
 
 1. **Identificador Único (UUID):**
    - Migration `V4` adicionando a coluna `uuid` única na tabela `consertos`.
@@ -38,16 +38,16 @@ Esta versão é uma evolução da Avaliação 3, implementando controle de acess
 
 ---
 
-## 🔑 Credenciais para Teste
+## Credenciais para Teste
 
 O banco de dados já possui um usuário cadastrado via migration para testes:
 
-* **Login:** `asdrubal@gmail.com`
+* **Login:** `professor@gmail.com`
 * **Senha:** `123456`
 
 ---
 
-## 📌 Principais Endpoints
+## Principais Endpoints
 
 | Método | Endpoint | Protegido? | Descrição |
 | :--- | :--- | :---: | :--- |
@@ -64,7 +64,7 @@ O banco de dados já possui um usuário cadastrado via migration para testes:
 
 ---
 
-## ▶️ Como executar o projeto
+## Como executar o projeto
 
 1. **Clonar o repositório:**
    ```bash
